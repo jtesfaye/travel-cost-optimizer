@@ -222,7 +222,7 @@ export function AppLogo() {
         <Icon name="map" className="size-5" />
       </span>
       <span className="text-base font-extrabold tracking-tight text-foreground">
-        RouteCost
+        Roadtrip Planner
       </span>
     </Link>
   )
@@ -260,14 +260,5 @@ export function SectionTitle({ children }: { children: ReactNode }) {
     >
       {children}
     </div>
-  )
-}
-
-export function LiveBadge() {
-  return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700">
-      <span className="live-dot size-1.5 rounded-full bg-emerald-500" />
-      Live prices
-    </span>
   )
 }

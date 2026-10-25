@@ -1,21 +1,17 @@
 import { useNavigate, useLocation } from "react-router";
 import { ReactNode } from "react"
-import { AppLogo, LiveBadge, Button, Icon } from "./ui";
+import { AppLogo, Button, Icon } from "./ui";
+import { useAppState } from "../AppState";
 
 export function AppHeader() {
 
-  const username = "foobar"
-  const logout = () => {};
-
+  const { username, logout } = useAppState()
   const navigate = useNavigate();
   return (
     <header className="sticky top-0 z-20 border-b border-border bg-white/90 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
         <AppLogo />
         <div className="flex items-center gap-2 sm:gap-3">
-          <span className="hidden sm:inline-flex">
-            <LiveBadge />
-          </span>
           <span className="hidden text-sm font-semibold text-foreground md:inline">
             {username}
           </span>
