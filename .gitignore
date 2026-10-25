@@ -15,3 +15,5 @@ frontend/.env.local
 .DS_Store
 .vscode/
 .idea/
+
+/docs
