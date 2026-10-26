@@ -1,4 +1,3 @@
-# Roadtrip Planner
 
 Full-stack app with a FastAPI backend and a React (Vite) frontend.
 
